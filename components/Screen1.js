@@ -1,7 +1,7 @@
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 
-export default function Screen1() {
+export default function Screen1({ navigation }) {
     return (
         <View style={{ flex: 1 }}>
             <View
@@ -164,6 +164,9 @@ export default function Screen1() {
                 </View>
                 <View>
                     <TouchableOpacity
+                        onPress={() => {
+                            navigation.navigate("Screen2");
+                        }}
                         style={{
                             backgroundColor: "#E97777",
                             height: "35%",
