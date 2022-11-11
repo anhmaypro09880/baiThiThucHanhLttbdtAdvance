@@ -12,8 +12,28 @@ export default function Screen2({ navigation }) {
                     marginTop: 20,
                 }}
             >
-                <View style={{ height: "10%", borderWidth: 1 }}>
-                    <Image source={require("../assets/search.png")}></Image>
+                <View
+                    style={{
+                        height: "5%",
+
+                        flexDirection: "row",
+                    }}
+                >
+                    <TouchableOpacity
+                        onPress={() => {
+                            navigation.navigate("Screen1");
+                        }}
+                    >
+                        <Image
+                            style={{ height: 35, width: 35 }}
+                            source={require("../assets/menu.png")}
+                        ></Image>
+                    </TouchableOpacity>
+
+                    <Image
+                        style={{ height: 35, width: 35, marginLeft: 250 }}
+                        source={require("../assets/magnifying-glass.png")}
+                    ></Image>
                 </View>
                 <Text
                     style={{
@@ -23,7 +43,7 @@ export default function Screen2({ navigation }) {
                         fontWeight: "bold",
                     }}
                 >
-                    Categori
+                    Categories
                 </Text>
                 <View style={{ flexDirection: "row", height: "5%" }}>
                     <TouchableOpacity
@@ -34,7 +54,7 @@ export default function Screen2({ navigation }) {
                             borderRadius: 10,
                             justifyContent: "center",
                             alignItems: "center",
-                            backgroundColor: "#EFF5F5",
+                            backgroundColor: "#497174",
                         }}
                     >
                         <Image
@@ -50,7 +70,7 @@ export default function Screen2({ navigation }) {
                             borderRadius: 10,
                             justifyContent: "center",
                             alignItems: "center",
-                            backgroundColor: "#EFF5F5",
+                            backgroundColor: "#497174",
                         }}
                     >
                         <Image
@@ -66,7 +86,7 @@ export default function Screen2({ navigation }) {
                             borderRadius: 10,
                             justifyContent: "center",
                             alignItems: "center",
-                            backgroundColor: "#EFF5F5",
+                            backgroundColor: "#497174",
                         }}
                     >
                         <Image
@@ -82,7 +102,7 @@ export default function Screen2({ navigation }) {
                             borderRadius: 10,
                             justifyContent: "center",
                             alignItems: "center",
-                            backgroundColor: "#EFF5F5",
+                            backgroundColor: "#497174",
                         }}
                     >
                         <Image
@@ -139,7 +159,7 @@ export default function Screen2({ navigation }) {
                 </View>
                 <View
                     style={{
-                        height: "55%",
+                        height: "25%",
                         width: "85%",
 
                         marginLeft: "15%",
@@ -153,14 +173,21 @@ export default function Screen2({ navigation }) {
                             flexDirection: "row",
                         }}
                     >
-                        <View style={{ height: "200%", width: "40%" }}>
+                        <View
+                            style={{
+                                height: 150,
+                                width: "40%",
+                                backgroundColor: "#B9E0FF",
+                                borderRadius: 15,
+                            }}
+                        >
                             <Image
                                 style={{
                                     height: 150,
                                     width: "100%",
                                     borderRadius: 15,
                                 }}
-                                source={require("../assets/brand-1.jpg")}
+                                source={require("../assets/stas_55_04-removebg-preview.png")}
                             ></Image>
                         </View>
                         <View
@@ -170,6 +197,60 @@ export default function Screen2({ navigation }) {
                                 marginTop: 20,
                                 marginLeft: 30,
                                 backgroundColor: "#D6E4E5",
+                                borderRadius: 15,
+                            }}
+                        >
+                            <Image
+                                style={{
+                                    height: 150,
+                                    width: "100%",
+                                    borderRadius: 15,
+                                }}
+                                source={require("../assets/renderpeople_free_rigged_people-removebg-preview.png")}
+                            ></Image>
+                        </View>
+                    </View>
+                </View>
+                <View
+                    style={{
+                        height: "30%",
+                        width: "85%",
+
+                        marginLeft: "15%",
+                    }}
+                >
+                    <View
+                        style={{
+                            height: "55%",
+                            width: "100%",
+
+                            flexDirection: "row",
+                        }}
+                    >
+                        <View
+                            style={{
+                                height: 150,
+                                width: "40%",
+                                backgroundColor: "#D6E4E5",
+                                borderRadius: 15,
+                            }}
+                        >
+                            <Image
+                                style={{
+                                    height: 150,
+                                    width: "100%",
+                                    borderRadius: 15,
+                                }}
+                                source={require("../assets/stas_55_04-removebg-preview.png")}
+                            ></Image>
+                        </View>
+                        <View
+                            style={{
+                                height: 150,
+                                width: "40%",
+                                marginTop: 20,
+                                marginLeft: 30,
+                                backgroundColor: "#B9E0FF",
                                 borderRadius: 15,
                             }}
                         >
